@@ -204,7 +204,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 /* ── Hero ─────────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: 72svh;
+  min-height: 55svh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -230,7 +230,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .hero-inner {
   position: relative;
   z-index: 2;
-  padding-block: 96px 56px;
+  padding-block: 80px 48px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
