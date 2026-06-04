@@ -215,7 +215,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
       rgba(12, 31, 55, 0.72) 40%,
       rgba(8, 18, 32, 0.10) 100%
     ),
-    url('https://images.unsplash.com/photo-HENZpJ-KWg0?w=1600&q=80') center center / cover no-repeat;
+    url('hero-bg.png') center center / cover no-repeat;
 }
 
 .hero-glow {
