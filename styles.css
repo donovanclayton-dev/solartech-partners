@@ -211,11 +211,11 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   background:
     linear-gradient(
       108deg,
-      rgba(7, 17, 31, 0.95) 0%,
-      rgba(12, 31, 55, 0.72) 40%,
-      rgba(8, 18, 32, 0.10) 100%
+      rgba(7, 17, 31, 0.88) 0%,
+      rgba(12, 31, 55, 0.55) 45%,
+      rgba(8, 18, 32, 0.05) 100%
     ),
-    url('hero-bg.png') center center / cover no-repeat;
+    url('hero-bg.png') 65% center / cover no-repeat;
 }
 
 .hero-glow {
