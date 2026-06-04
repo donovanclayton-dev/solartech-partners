@@ -313,8 +313,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .hero-stats {
   display: flex;
   align-items: center;
-  gap: 2.25rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
 }
 
 .stat {
@@ -323,7 +323,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   gap: 0.2rem;
 }
 .stat strong {
-  font-size: 1.8rem;
+  font-size: 1.45rem;
   font-weight: 900;
   color: var(--white);
   line-height: 1;
