@@ -73,17 +73,3 @@ if (trustGrid && 'IntersectionObserver' in window) {
   }, { threshold: 0.4 }).observe(trustGrid);
 }
 
-/* ── Form submission ──────────────────────────────── */
-const form = document.querySelector('.connect-form');
-if (form) {
-  form.addEventListener('submit', e => {
-    const action = form.getAttribute('action') || '';
-    if (action.includes('REPLACE_WITH_YOUR_ID')) {
-      e.preventDefault();
-      const name = form.querySelector('#name')?.value.trim() || 'there';
-      alert(
-        `Thanks, ${name}!\n\nPlease send your interest directly to:\nmarketing@solartechonline.com\n\nOur partnerships team will follow up within two business days.`
-      );
-    }
-  });
-}
