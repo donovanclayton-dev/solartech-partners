@@ -673,6 +673,17 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   color: var(--navy);
   line-height: 1;
   margin-bottom: 0.5rem;
+  display: block;
+  transform-origin: top center;
+}
+
+@keyframes statFlip {
+  0%   { opacity: 0; transform: perspective(300px) rotateX(-70deg) translateY(-12px); }
+  60%  { opacity: 1; }
+  100% { opacity: 1; transform: perspective(300px) rotateX(0deg) translateY(0); }
+}
+.trust-num.flipping {
+  animation: statFlip 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .trust-label {

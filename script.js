@@ -41,6 +41,38 @@ if (reveals.length && 'IntersectionObserver' in window) {
   reveals.forEach(el => el.classList.add('visible'));
 }
 
+/* ── Trust stat flip + count-up ──────────────────── */
+const trustGrid = document.querySelector('.trust-grid');
+if (trustGrid && 'IntersectionObserver' in window) {
+  new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting) return;
+    document.querySelectorAll('.trust-card').forEach((card, i) => {
+      setTimeout(() => {
+        const numEl = card.querySelector('.trust-num');
+        if (!numEl) return;
+        const raw = numEl.textContent.trim();
+        const cleaned = raw.replace(/,/g, '');
+        const match = cleaned.match(/^(\d+(?:\.\d+)?)(.*)/);
+        numEl.classList.add('flipping');
+        if (match) {
+          const target = parseFloat(match[1]);
+          const suffix = match[2];
+          const formatNum = n => target >= 1000 ? n.toLocaleString() : String(n);
+          const duration = 900;
+          const start = performance.now();
+          const tick = now => {
+            const p = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            numEl.textContent = formatNum(Math.round(eased * target)) + suffix;
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      }, i * 140);
+    });
+  }, { threshold: 0.4 }).observe(trustGrid);
+}
+
 /* ── Form submission ──────────────────────────────── */
 const form = document.querySelector('.connect-form');
 if (form) {
