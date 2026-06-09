@@ -4,11 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creator Partnership | SolarTech Online</title>
+  <meta name="description" content="SolarTech Online invites select YouTube creators to partner on sponsored solar content. Earn a flat fee per video plus $50 per qualified lead and $1,000 per completed install.">
+  <link rel="canonical" href="https://donovanclayton-dev.github.io/solartech-partners/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://donovanclayton-dev.github.io/solartech-partners/">
+  <meta property="og:title" content="Creator Partnership | SolarTech Online">
+  <meta property="og:description" content="You've been personally selected to partner with SolarTech. Earn a flat fee per video plus performance bonuses — $50 per lead, $1,000 per install.">
+  <meta property="og:image" content="https://donovanclayton-dev.github.io/solartech-partners/hero-bg.png">
+  <meta property="og:image:alt" content="Creator at desk — SolarTech Online creator partnership program">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Creator Partnership | SolarTech Online">
+  <meta name="twitter:description" content="You've been personally selected to partner with SolarTech. Flat fee per video plus $50/lead and $1,000/install.">
+  <meta name="twitter:image" content="https://donovanclayton-dev.github.io/solartech-partners/hero-bg.png">
+
+  <link rel="icon" href="logo-white.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="hero-bg.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -80,7 +99,7 @@
           <div class="concept-card reveal reveal-delay-1">
             <div class="concept-num" aria-hidden="true">01</div>
             <h3>Open With the Sponsorship</h3>
-            <p>You introduce SolarTech Online as your sponsor — clearly, upfront, and on camera. No buried disclaimers.</p>
+            <p>You introduce SolarTech as your sponsor — clearly, upfront, and on camera. No buried disclaimers.</p>
           </div>
           <div class="concept-card reveal reveal-delay-2">
             <div class="concept-num" aria-hidden="true">02</div>
@@ -445,17 +464,17 @@
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
             </div>
           </div>
 
           <div class="form-group">
             <label for="channel">YouTube Channel URL</label>
-            <input type="url" id="channel" name="channel" placeholder="https://youtube.com/@yourchannel" required>
+            <input type="url" id="channel" name="channel" placeholder="https://youtube.com/@yourchannel" required autocomplete="url">
           </div>
 
           <div class="form-row">
@@ -489,10 +508,10 @@
               How would you approach a SolarTech sponsorship?
               <span class="label-opt">(optional)</span>
             </label>
-            <textarea id="message" name="message" rows="4" placeholder="What story would you tell your audience about going solar? Any angle or format you have in mind?"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="What story would you tell your audience about going solar? Any angle or format you have in mind?" autocomplete="off"></textarea>
           </div>
 
-          <button type="submit" class="btn btn-orange btn-submit">Submit &amp; We'll Follow Up →</button>
+          <button type="submit" class="btn btn-orange btn-submit">Submit &amp; We'll Follow Up <span aria-hidden="true">→</span></button>
           <p class="form-note">Our partnerships team reviews every submission and responds within 3&#8209;5 business days.</p>
         </form>
       </div>
